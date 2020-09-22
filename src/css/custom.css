@@ -1,0 +1,144 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #007be2;
+  --ifm-color-primary-dark: #119cc5;
+  --ifm-color-primary-darker: #05879d;
+  --ifm-color-primary-darkest: #007a87;
+  --ifm-color-primary-light: #6dc8f2;
+  --ifm-color-primary-lighter: #c6ebfc;
+  --ifm-color-primary-lightest: #f2fbff;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Raleway", PingFangSC-Light, "PingFang SC",
+    "Microsoft Yahei", Helvetica, sans-serif;
+
+  --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+  --ifm-toc-border-color: #f7f7f7;
+}
+
+html {
+  --post-title-color: #313131;
+  --post-pub-date-color: #8c8c8c;
+  --divider-color: #ebebeb;
+}
+
+html[data-theme="dark"] {
+  --post-title-color: white;
+  --post-pub-date-color: var(--ifm-color-gray-100);
+  --divider-color: #353535;
+  --ifm-toc-border-color: #313131;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--ifm-font-weight-semibold);
+} */
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* bilibili video iframe */
+.markdown iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 2vh;
+}
+
+/* navbar */
+.navbar__title {
+  margin-left: 20px;
+  color: var(--ifm-color-primary);
+}
+
+.intro__name {
+  color: var(--ifm-color-primary);
+}
+
+.bloghome__intro > p {
+  margin: 26px 0px 24px 0;
+}
+
+.content__divider {
+  border-bottom: 1px solid var(--divider-color);
+  margin-top: 84px;
+  margin-bottom: 60px;
+}
+
+.blog__section_title {
+  margin-bottom: 54px;
+  display: flex;
+  align-items: center;
+}
+
+/* 发布日期 */
+.post__date {
+  background: url("/icons/circle.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 9.75em;
+  height: 9.75em;
+}
+
+.post__day {
+  font-size: 4.75em;
+  line-height: 1em;
+  font-weight: 900;
+}
+
+.post__year_month {
+  align-self: start;
+  color: var(--post-pub-date-color);
+}
+
+.social__links {
+  width: 100%;
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.social__links > *,
+.social__links img {
+  color: var(--ifm-navbar-link-color);
+}
+
+.social__links .dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.social__links .dropdown span {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.social__links .dropdown__menu {
+  max-width: initial;
+}
+
+.article__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__read_count {
+  opacity: 0.8;
+}
