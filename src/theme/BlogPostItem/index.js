@@ -187,13 +187,13 @@ function BlogPostItem(props) {
 
 function Count({ postId, ...post }) {
   const addViewCount = async () => {
-    await fetch("https://api.zxuqian.cn/post/increase_view", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ postId }),
-    });
+    // await fetch("https://api.zxuqian.cn/post/increase_view", {
+    //   method: "PUT",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ postId }),
+    // });
   };
 
   useEffect(() => {

@@ -8,7 +8,6 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "", // Usually your GitHub org/user name.
   projectName: "", // Usually your repo name.
-  stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
   themeConfig: {
     navbar: {
       title: "BeanIo",

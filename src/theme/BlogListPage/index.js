@@ -40,15 +40,15 @@ function BlogListPage(props) {
   const [views, setViews] = useState([]);
   const getViews = async () => {
     try {
-      const res = await fetch("https://api.zxuqian.cn/post/views", {
-        method: "POST",
-        body: JSON.stringify(postIds),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const views = await res.json();
-      setViews(views);
+      // const res = await fetch("https://api.zxuqian.cn/post/views", {
+      //   method: "POST",
+      //   body: JSON.stringify(postIds),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
+      // const views = await res.json();
+      // setViews(views);
     } catch (error) {}
   };
 
