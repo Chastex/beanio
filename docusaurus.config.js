@@ -14,7 +14,7 @@ module.exports = {
       title: "BeanIo",
       logo: {
         alt: " beanio",
-        src: "img/logo.png",
+        src: "img/logo.svg",
       },
       items: [
       ],
@@ -23,7 +23,7 @@ module.exports = {
       style: "dark",
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} BeanIo Built with Docusaurus.<p></p>`,
+      copyright: `Copyright © ${new Date().getFullYear()} BeanIo Built with Docusaurus.<p><a href="http://beian.miit.gov.cn">京ICP备2020034947号-1 </a></p>`,
     },
     prism: {
       darkTheme: require("prism-react-renderer/themes/vsDark"),
@@ -44,7 +44,7 @@ module.exports = {
           feedOptions: {
             type: "all",
             title: "beanio",
-            copyright: `Copyright © ${new Date().getFullYear()} BeanIo Built with Docusaurus.<p></p>`,
+            copyright: `Copyright © ${new Date().getFullYear()} BeanIo Built with Docusaurus.<p><a href="http://beian.miit.gov.cn">京ICP备2020034947号-1 </a></p>`,
           },
         },
         theme: {

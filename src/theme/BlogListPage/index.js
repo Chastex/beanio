@@ -63,10 +63,10 @@ function BlogListPage(props) {
         <div className="row">
           <div className="col col--10 col--offset-1 bloghome__intro">
             <h1>
-              Hello! 我是<span className="intro__name">峰华</span>
+              Hello! 我是<span className="intro__name">Bean</span>
             </h1>
             <p>
-              欢迎来到我的博客！我是一名前端工程师，拥有10年左右开发经验，5年从业经验，从事过前端、后端、全栈、移动端的开发工作，并曾在美国史蒂文斯理工学院攻读计算机科学硕士学位，获得云计算专业证书
+              欢迎来到我的博客！
             </p>
             <SocialLinks />
           </div>
@@ -115,27 +115,7 @@ function SocialLinks({ ...props }) {
   const { isDarkTheme } = useThemeContext();
   return (
     <div className="social__links">
-      <a href="https://space.bilibili.com/302954484">
-        <img
-          src={useBaseUrl(`icons/bilibili${isDarkTheme ? "-dark" : ""}.svg`)}
-          alt="bilibili"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/zxuqian/">
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
-      <a href="https://github.com/zxuqian">
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-      <div class="dropdown dropdown--hoverable">
-        <FontAwesomeIcon icon={faWeixin} color="#07C160" size="lg" />
-        <span>公众号</span>
-        <img
-          width="50%"
-          className="dropdown__menu"
-          src={useBaseUrl("/img/publicQR.png")}
-        />
-      </div>
+
     </div>
   );
 }
